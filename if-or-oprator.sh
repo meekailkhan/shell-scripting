@@ -2,9 +2,18 @@
 
 #!/bin/bash
 
-user=$(uname)
+# user=$(uname)
 
-if [[ ${user,} == 'linux1' || ${UID} -eq 1000 ]]
+# if [[ ${user,} == 'linux1' || ${UID} -eq 1000 ]]
+# then
+#     echo "user is using ${user,} and user is root user"
+# fi
+
+read -p "you want to continue (Y/y/yes)" userval
+
+if [[ ${userval,,} == 'y' || ${userval,,} == 'yes' ]]
 then
-    echo "user is using ${user,} and user is root user"
+    echo "you want it"
+else 
+    echo "you dont want it"
 fi
