@@ -8,7 +8,6 @@
 # then
 #     echo "user is using ${user,} and user is root user"
 # fi
-
 read -p "you want to continue (Y/y/yes)" userval
 
 if [[ ${userval,,} == 'y' || ${userval,,} == 'yes' ]]
