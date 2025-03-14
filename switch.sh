@@ -4,16 +4,16 @@ action=${1}
 
 case ${action} in
     start)
-        echo "going to start"
+        echo -e "\033[0;32m going to start"
         ;;
     stop)
-        echo "going to stop"
+        echo -e "\033[0;31m going to stop"
         ;;
     reload)
-        echo "goin to reload"
+        echo -e "\033[0;33m goin to reload"
         ;;
     restart)
-        echo "going to restart"
+        echo -e "\033[0;32m going to restart"
         ;;
     *)
         echo "please enter valid action"
